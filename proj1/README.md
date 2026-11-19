@@ -1,9 +1,20 @@
 # Mini Project 1 (Conventional Algorithm)
 
-This project uses SIFT and Canny edge detection to identify parking spaces and classify whether a parking space is occupied, blocked, or empty
+This project explores conventional computer-vision methods for parking-space
+analysis. The SIFT occupancy demo represents each annotated parking-space crop
+as a Bag-of-Visual-Words histogram and classifies it with a nearest-neighbor
+classifier.
 
-## Setup Instructions
+## Run the occupancy demo
 
+Install the Python dependencies if needed:
+
+```bash
+python -m pip install opencv-python numpy
 ```
-# Something goes here
+
+From the repository root, run:
+
+```bash
+python proj1/sift.py
 ```

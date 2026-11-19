@@ -1,3 +1,8 @@
+# Training data
+training_set/
+*.coco.json
+*.jpg
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
