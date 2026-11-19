@@ -135,35 +135,6 @@ def run() -> None:
         print(f"Image: {name}")
         print(f"Predicted occupied spaces: {predicted_occupied}")
         print(f"Annotated occupied spaces: {actual_occupied}")
-        # print(f"Per-space accuracy: {accuracy:.1%} ({correct}/{len(target_annotations)})")
-
-    # if not samples:
-    #     raise ValueError("No SIFT descriptors found in the training parking spaces.")
-
-    # all_descriptors = np.vstack(vocabulary_descriptors)
-    # if len(all_descriptors) > MAX_VOCAB_DESCRIPTORS:
-    #     indices = rng.choice(
-    #         len(all_descriptors), MAX_VOCAB_DESCRIPTORS, replace=False
-    #     )
-    #     all_descriptors = all_descriptors[indices]
-
-    # word_count = min(WORDS, len(all_descriptors))
-    # cv.setRNGSeed(7)
-    # labels = np.zeros((len(all_descriptors), 1), dtype=np.int32)
-    # _, _, vocabulary = cv.kmeans(
-    #     all_descriptors,
-    #     word_count,
-    #     labels,
-    #     (cv.TERM_CRITERIA_EPS | cv.TERM_CRITERIA_MAX_ITER, 40, 0.1),
-    #     1,
-    #     cv.KMEANS_PP_CENTERS,
-    # )
-
-    # training_features = np.vstack(
-    #     [build_histogram(descriptors, vocabulary) for descriptors, _ in samples]
-    # )
-
-    
 
 
 def main() -> None:
